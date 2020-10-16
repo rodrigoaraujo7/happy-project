@@ -46,3 +46,19 @@
     animation-fill-mode: backwards;
 }
 /* /////////////// Final Map apper Animation \\\\\\\\\\\\\\\ */
+
+/* /////////////// Slide Transition Animation \\\\\\\\\\\\\\\ */
+@keyframes slide-transition {
+    from {
+        transform: translateY(0);
+    } to {
+        transform: translateY(-100%);
+    }
+}
+
+.animate-slide-transition {
+    animation-name: slide-transition;
+    animation-duration: 400ms;
+    animation-delay: 800ms;    
+}
+/* /////////////// Final Slide Transition Animation \\\\\\\\\\\\\\\ */

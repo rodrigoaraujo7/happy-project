@@ -36,6 +36,8 @@
 
     margin: auto;
 
+    transform: rotate(90deg);
+
     transition: background 200ms;
 }
 
