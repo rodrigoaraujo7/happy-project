@@ -1,0 +1,48 @@
+/* /////////////// Up Animation \\\\\\\\\\\\\\\ */
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-up {
+    animation-name: up;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+}
+/* /////////////// Final Up Animation \\\\\\\\\\\\\\\ */
+
+/* /////////////// Aside Animation \\\\\\\\\\\\\\\ */
+@keyframes right {
+    from {
+        transform: translateX(-100%);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+.animate-right {
+    animation-name: right;
+    animation-duration: 500ms;
+}
+/* /////////////// Final Aside Animation \\\\\\\\\\\\\\\ */
+
+/* /////////////// Map apper Animation \\\\\\\\\\\\\\\ */
+@keyframes apper {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.animate-apper {
+    animation-name: apper;
+    animation-duration: 800ms;
+    animation-fill-mode: backwards;
+}
+/* /////////////// Final Map apper Animation \\\\\\\\\\\\\\\ */

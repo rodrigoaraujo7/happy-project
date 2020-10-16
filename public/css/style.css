@@ -1,0 +1,45 @@
+/* /////////////// Body CSS Modifications \\\\\\\\\\\\\\\ */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    color: #fff;
+    background: #ebf2f5;
+}
+
+body, input, button, textarea {
+    /* font-weigh font-size/line-height font-family */
+    font: 400 1.8rem/1 'Nunito', sans-serif; /* 1 rem = 62.5% of 16px */
+}
+/* /////////////// Final Body CSS Modifications \\\\\\\\\\\\\\\ */
+
+/* /////// Delay Up Animation \\\\\\\ */
+#logo {
+    animation-delay: 50ms;
+}
+
+.location {
+    animation-delay: 150ms;
+}
+
+.main h1 {
+    animation-delay: 250ms;
+}
+
+.visit p {
+    animation-delay: 350ms;
+}
+
+.visit a {
+    animation-delay: 450ms;
+}
+/* /////// Final Delay Up Animation \\\\\\\ */
