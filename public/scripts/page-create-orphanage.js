@@ -89,13 +89,30 @@ function  toggleSelect() {
     input.value = button.dataset.value
 }
 
-//validar posição no mapa
+//validar posição no mapa e estilo
 function validate(event) {
     const lat = document.querySelector('input.lat')
     const lng = document.querySelector('input.lng')
+    const alertCard = document.querySelector('div.container-card')
 
     if(lat.value === '' || lng.value === '') {         event.preventDefault()
-        alert('Clique no mapa para adicionar o local do seu orfanato!')
+        alertCard.classList.add('animate-alert-in')
+
+        const delay = setTimeout(() => {
+            alertCard.style = "visibility: visible"
+        }, 400)
     }
 }
 
+function closeAlertCard(event) {
+    const closeButton = document.querySelector('input.closeButton')
+    const alertCard = document.querySelector('div.container-card')
+
+    alertCard.classList.add('animate-alert-out')
+
+    const delay = setTimeout(() => {
+        alertCard.style = "visibility: hidden"
+        
+        alertCard.classList.remove('animate-alert-in', 'animate-alert-out')
+    }, 400)
+}

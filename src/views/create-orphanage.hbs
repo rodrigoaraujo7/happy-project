@@ -27,6 +27,14 @@
 
 <body>
     <div id="page-create-orphanage">
+        <div class="container-card">
+            <div class="card-alert">
+                <h1>ATENÇÃO</h1>
+                <p>Clique no mapa para adicionar o local do seu orfanato</p>
+                <input onclick="closeAlertCard(event)" class="closeButton" type="button" value="X">
+            </div>
+        </div>
+
         <aside class="animate-right sidebar">
             <img src="/images/map-marker.svg" alt="Happy" />
 
@@ -76,7 +84,8 @@
                         <div class="images-upload" id="images">
                             <div class="new-upload">
                                 <input name="images" placeholder="Cole o link da foto aqui" type="text" required />
-                                <span onclick="deleteField(event)"><img src="/images/remove-file.svg" alt="Remover Foto" /></span>
+                                <span onclick="deleteField(event)"><img src="/images/remove-file.svg"
+                                        alt="Remover Foto" /></span>
                             </div>
                         </div>
                         <button onclick="addPhotoField()" type="button">
@@ -104,7 +113,8 @@
                         <label for="opening_on_weekends">Atende fim de semana?</label>
                         <input id="open_on_weekends" name="open_on_weekends" value="1" type="hidden" required>
                         <div class="button-select">
-                            <button data-value="1" onclick="toggleSelect(event)" type="button" class="active">Sim</button>
+                            <button data-value="1" onclick="toggleSelect(event)" type="button"
+                                class="active">Sim</button>
                             <button data-value="0" onclick="toggleSelect(event)" type="button">Não</button>
                         </div>
 

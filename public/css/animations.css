@@ -62,3 +62,35 @@
     animation-delay: 800ms;    
 }
 /* /////////////// Final Slide Transition Animation \\\\\\\\\\\\\\\ */
+
+/* /////////////// Aler Card In Transition Animation \\\\\\\\\\\\\\\ */
+@keyframes alert-in {
+    from {
+        transform: translateX(100%);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+.animate-alert-in {
+    animation-name: alert-in;
+    animation-duration: 400ms;
+    animation-delay: 100ms;    
+}
+/* /////////////// Final Aler Card In Transition Animation \\\\\\\\\\\\\\\ */
+
+/* /////////////// Aler Card Out Transition Animation \\\\\\\\\\\\\\\ */
+@keyframes alert-out {
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(100%);
+    }
+}
+
+.animate-alert-out {
+    animation-name: alert-out;
+    animation-duration: 400ms;
+    animation-delay: 100ms;    
+}
+/* /////////////// Final Aler Card Out Transition Animation \\\\\\\\\\\\\\\ */

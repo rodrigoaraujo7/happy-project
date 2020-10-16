@@ -19,3 +19,54 @@ main {
     background: #f5f8fa;
     border-radius: 0 0 20px 20px;
 }
+
+.container-card {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 500;
+
+    overflow: hidden;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffffffd5;
+
+    position: fixed;
+
+    visibility: hidden;
+}
+
+.container-card .card-alert {
+    background: #15c3d6;
+    color: #fff;
+
+    width: 45rem;
+    height: 25rem;
+
+    padding: 2.5rem;
+
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.container-card .card-alert input {
+    background: none;
+    border: 0;
+
+    color: #fff;
+    font-size: 5rem;
+
+    cursor: pointer;
+    outline: none;
+}
